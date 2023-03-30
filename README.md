@@ -1,5 +1,5 @@
 ## Application Form using Google Sheets
-1. Create a new Google spreadsheet or type `sheets.new` url
+1. Create a new Google spreadsheet or type `sheets.new` in browser URL
 2. Click `Extensions` from toolbar and then `App Script`
 3. Paste the following code in editor.
 
