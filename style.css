@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    height: 100vh;
+}
+button{
+    border: solid #545758 2px;
+    padding: 2px;
+    border-radius: 5px;
+    height: 40px;
+    width: 270px;
+}
+button:hover{
+    background: #4a029b;
+    color: aliceblue;
+    border: none;
+}
+.divvy{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+.teams{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+}
+.teams2{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    margin-left: 15px;
+    font-size: 17px;
+}
+.teams2 > h3{
+    font-weight: 600;
+}
+.teams2 > p{
+    font-weight: 300;
+    font-size: medium;
+}
+.teams2 > h4{
+    font-weight: 400;
+}

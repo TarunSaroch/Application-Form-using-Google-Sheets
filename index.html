@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining Form</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+<section class="py-6 dark:dark:bg-gray-800 dark:dark:text-gray-50">
+	<div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+		<div class="py-6 md:py-0 md:px-6"  style="margin: auto 0;">
+			<h1 class="text-4xl font-bold" style="font-weight: 600; font-family: 'Space Grotesk', sans-serif;">Send us your Application</h1>
+			<h3 class="text-xl font-bold" style="margin-top: 5px; margin-bottom: 15px; font-family: 'Space Grotesk', sans-serif;">Fill in the form to start a conversation</h3>
+			<div class="space-y-4">
+				<p class="flex items-center">
+					<span>Join IEEE Chandigarh University Student Branch to expand your tech knowledge, connect with peers, participate in events, access resources, and boost your career prospects. Don't miss out on this opportunity!</span>
+				</p>
+                <p class="flex items-center">
+                    <h3 class="text-xl font-bold" style="margin-top: 20px; margin-bottom: 15px; font-family: 'Space Grotesk', sans-serif;">Team Scaler got your back...</h3>
+                </p>
+                <p class="flex items-center">
+                    <div class="teams">
+                        <img src="person.svg">
+                        <div class="teams2">
+                            <h3>Tarun Saroch</h3>
+                            <p>Student</p>
+                            <h4>tsaroch@proton.me</h4>
+                        </div>
+                    </div>
+                </p>
+                
+			</div>
+		</div>
+		<form  method="post" name="submit-to-google-sheet" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+			<label class="block">
+				<span class="mb-1">Full name</span>
+				<input type="text" placeholder="Tim Scott" name="fullname" id="fullname" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800" required>
+			</label>
+            <div class="divvy">
+                <label class="block">
+                    <span class="mb-1">UID No.</span>
+                    <input type="text" placeholder="21BCS...." name="uid" id="uid" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800" required>
+                </label>
+                <label class="block ml-10">
+                    <span class="mb-1">Gender</span>
+                    <select id="gender" name="gender" id="gender" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label class="block ml-10">
+                    <span class="mb-1">Age</span>
+                    <input type="number" placeholder="19" name="age" id="age" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"required>
+                </label>
+            </div>
+            <label class="block">
+				<span class="mb-1">Email address</span>
+				<input type="email" placeholder="your@mail.com" name="email" id="email" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"required>
+			</label>
+            <label class="block">
+				<span class="mb-1">Contact number (Preferably Whatsapp)</span>
+				<input type="number" placeholder="+91 - 9055XXXXXXX" name="phone" id="phone" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"required>
+			</label>
+            <div class="divvy">
+                <label class="block">
+                    <span class="mb-1">Course</span>
+                    <input type="text" placeholder="Computer Science" name="course" id="course" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800" required>
+                </label>
+                <label class="block ml-10">
+                    <span class="mb-1">Year</span>
+                    <select name="year" id="year" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"required>
+                        <option value="">Select</option>
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="other">other</option>
+                    </select>
+                </label>
+            </div>
+            <label class="block">
+				<span class="mb-1">Why would you like to join IEEE?</span>
+				<textarea rows="3" id="address" name="why" placeholder="I am joining IEEE ..." class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800"></textarea>
+			</label>
+			<label class="block">
+				<span class="mb-1">Describe Yourself</span>
+				<textarea rows="5" id="about" name="about" placeholder="I'm ..." class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:dark:bg-gray-800" required></textarea>
+			</label>
+			<button class="head-button rounded-4 contactButton" type="submit">Submit</button>
+		</form>
+	</div>
+</section>
+</body>
+</html>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5wEZ0lArZThZ-GsHF_InbWtD3LfWvjr3L4osA5V2dfye0-KXRG3y4RPC0yDdV0sBu7g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+      console.log('Success!', response)
+      window.location.href = 'submitted.html'; // Redirect to submitted.html
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script src="script.js"></script>
